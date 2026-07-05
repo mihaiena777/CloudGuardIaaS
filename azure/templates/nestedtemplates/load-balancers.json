@@ -8,6 +8,20 @@
     "location": {
       "type": "string"
     },
+    "customElbName": { 
+      "defaultValue": "frontend-lb", 
+      "type": "String", 
+      "metadata": { 
+        "description": "External load balancer name." 
+      } 
+    },
+    "customIlbName": { 
+      "defaultValue": 
+      "backend-lb", "type": 
+      "String", "metadata": { 
+        "description": "Internal load balancer name." 
+      }
+    },
     "vmName": {
       "type": "string"
     },
@@ -54,7 +68,7 @@
     "appAddressName": "[variables('appName')]",
     "appAddressId": "[resourceId(variables('resourceGroup').name, 'Microsoft.Network/publicIPAddresses/', variables('appAddressName'))]",
     "appFEName": "[variables('appName')]",
-    "elbName": "frontend-lb",
+    "elbName": "[parameters('customElbName')]",
     "elbID": "[if(parameters('upgrading'), parameters('elBResourceId'), resourceId('Microsoft.Network/loadBalancers', variables('elbName')))]",
     "elbBEAddressPool": "[concat(variables('elbName'), '-pool')]",
     "elbBEAddressPoolName": "[if(parameters('upgrading'), parameters('elbTargetBEAddressPoolName'), variables('elbBEAddressPool'))]",
@@ -65,7 +79,7 @@
     "appHealthProtocol": "tcp",
     "ilbHealthProtocol": "tcp",
     "lbHealthPort": 8117,
-    "ilbName": "['backend-lb']",
+    "ilbName": "[parameters('customIlbName')]",
     "ilbID": "[if(parameters('upgrading'), parameters('ilbResourceId'), resourceId('Microsoft.Network/loadBalancers', variables('ilbName')))]",
     "ilbBEAddressPool": "[concat(variables('ilbName'), '-pool')]",
     "internalLBPrivateIPAddress": "[parameters('Subnet2StartAddress')]",
