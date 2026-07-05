@@ -1,0 +1,170 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiaeast"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "upgrading": {
+            "value": "no"
+        },
+        "customElbName": {
+            "value": "lab-param-elb"
+        },
+        "customIlbName": {
+            "value": "lab-param-ilb"
+        },
+        "elbResourceId": {
+            "value": ""
+        },
+        "elbTargetBEAddressPoolName": {
+            "value": ""
+        },
+        "ilbResourceId": {
+            "value": ""
+        },
+        "ilbTargetBEAddressPoolName": {
+            "value": ""
+        },
+        "vmName": {
+            "value": "healthnzvmssr812"
+        },
+        "instanceCount": {
+            "value": "2"
+        },
+        "maxInstanceCount": {
+            "value": "6"
+        },
+        "managementServer": {
+            "value": "CP-management"
+        },
+        "configurationTemplate": {
+            "value": "Azure-Lab-Template-R812"
+        },
+        "adminEmail": {
+            "value": "mihaiena@yahoo.com"
+        },
+        "deploymentMode": {
+            "value": "Standard"
+        },
+        "instanceLevelPublicIPv4": {
+            "value": "no"
+        },
+        "mgmtInterfaceOpt2": {
+            "value": "eth1-private"
+        },
+        "appLoadDistribution": {
+            "value": "Default"
+        },
+        "ilbLoadDistribution": {
+            "value": "Default"
+        },
+        "customMetrics": {
+            "value": "yes"
+        },
+        "cloudGuardVersion": {
+            "value": "R81.20 - Bring Your Own License"
+        },
+        "vmSize": {
+            "value": "Standard_D4s_v4"
+        },
+        "sicKey": {
+            "value": null
+        },
+        "bootstrapScript": {
+            "value": ""
+        },
+        "allowDownloadFromUploadToCheckPoint": {
+            "value": "true"
+        },
+        "additionalDiskSizeGB": {
+            "value": null
+        },
+        "diskType": {
+            "value": "Premium_LRS"
+        },
+        "sourceImageVhdUri": {
+            "value": "noCustomUri"
+        },
+        "virtualNetworkName": {
+            "value": "vnet01-8"
+        },
+        "virtualNetworkAddressPrefixes": {
+            "value": [
+                "172.16.0.0/22"
+            ]
+        },
+        "vnetNewOrExisting": {
+            "value": "new"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "cloudguard-test-01"
+        },
+        "subnet1Name": {
+            "value": "VMSS-Guard-Frontend"
+        },
+        "subnet1Prefix": {
+            "value": "172.16.0.0/24"
+        },
+        "subnet2Name": {
+            "value": "VMSS-Guard-Backend"
+        },
+        "subnet2Prefix": {
+            "value": "172.16.1.0/24"
+        },
+        "subnet2StartAddress": {
+            "value": "172.16.1.4"
+        },
+        "enableIpv6": {
+            "value": false
+        },
+        "virtualNetworkAddressPrefixV6": {
+            "value": ""
+        },
+        "subnet1PrefixV6": {
+            "value": ""
+        },
+        "subnet2PrefixV6": {
+            "value": ""
+        },
+        "ilbFrontendIPv6Address": {
+            "value": ""
+        },
+        "floatingIP": {
+            "value": "no"
+        },
+        "adminShell": {
+            "value": "/bin/bash"
+        },
+        "tagsByResource": {
+            "value": {}
+        },
+        "deployNewNSG": {
+            "value": true
+        },
+        "NewNsgName": {
+            "value": "healthnzvmssr812-nsg"
+        },
+        "storageAccountDeployMode": {
+            "value": "New"
+        },
+        "addStorageAccountIpRules": {
+            "value": false
+        },
+        "MaintenanceModePasswordHash": {
+            "value": null
+        },
+        "availabilityZones": {
+            "value": []
+        },
+        "availabilityZonesChoice": {
+            "value": "No"
+        }
+    }
+}
