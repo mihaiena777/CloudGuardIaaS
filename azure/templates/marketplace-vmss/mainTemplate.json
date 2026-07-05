@@ -503,7 +503,7 @@
     },
     "_artifactsLocation": {
       "type": "string",
-      "defaultValue": "https://raw.githubusercontent.com/mihaiena777/CloudGuardIaaS/create-vmss/azure/templates/marketplace-vmss/"
+      "defaultValue": "https://raw.githubusercontent.com/mihaiena777/CloudGuardIaaS/create-vmss/azure/templates/"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
