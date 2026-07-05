@@ -9,7 +9,7 @@
             "value": "password"
         },
         "adminPassword": {
-            "value": null
+            "value": "Redshed123!@#"
         },
         "upgrading": {
             "value": "no"
@@ -75,7 +75,7 @@
             "value": "Standard_D4s_v4"
         },
         "sicKey": {
-            "value": null
+            "value": "alfaalfa1234"
         },
         "bootstrapScript": {
             "value": ""
