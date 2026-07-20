@@ -71,9 +71,6 @@
         "vmSize": {
             "value": "Standard_D4ds_v5"
         },
-        "sicKey": {
-            "value": "cl0udguard"
-        },
         "bootstrapScript": {
             "value": ""
         },
