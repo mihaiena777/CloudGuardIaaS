@@ -8,7 +8,7 @@
         "authenticationType": {
             "value": "password"
         },
-        "upgrading": {
+		"upgrading": {
             "value": "yes"
         },
 		"customElbName": {
