@@ -5,9 +5,6 @@
         "location": {
             "value": "australiasoutheast"
         },
-        "authenticationType": {
-            "value": "password"
-        },
 		"upgrading": {
             "value": "yes"
         },
