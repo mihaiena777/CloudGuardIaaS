@@ -5,6 +5,12 @@
         "location": {
             "value": "australiasoutheast"
         },
+		"authenticationType": {
+            "value": "password"
+        },
+        "adminPassword": {
+            "value": "N0tAllowed!@#"
+		},
 		"upgrading": {
             "value": "yes"
         },
