@@ -1,0 +1,247 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiasoutheast"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPassword": {
+            "value": "N0tAllowed!@#"
+        },
+        "upgrading": {
+            "value": "yes"
+        },
+        "vmName": {
+            "value": "cloudguardvmssase82ingress"
+        },
+        "instanceCount": {
+            "value": "2"
+        },
+        "maxInstanceCount": {
+            "value": "6"
+        },
+        "managementServer": {
+            "value": "PRT-DH3-CP5150a-sms"
+        },
+        "configurationTemplate": {
+            "value": "AZ-ASE-EXT-R82"
+        },
+        "adminEmail": {
+            "value": "Britto.Antonycruz@TeWhatuOra.govt.nz"
+        },
+        "deploymentMode": {
+            "value": "ELBOnly"
+        },
+		"customElbName": {
+            "value": "sha-infra-network-elb-ase-1"
+        },
+        "instanceLevelPublicIPv4": {
+            "value": "yes"
+        },
+        "lbsTargetRGName": {
+            "value": "sha-infra-network-rg-ase-4"
+        },
+        "elbResourceId": {
+            "value": "/subscriptions/ca095a5d-36c0-4d4f-82ff-83580d85ebba/resourceGroups/sha-infra-network-rg-ase-4/providers/Microsoft.Network/loadBalancers/sha-infra-network-elb-ase-1"
+        },
+        "elbTargetBEAddressPoolName": {
+            "value": "sha-infra-network-elbbepool-ase-1"
+        },
+        "mgmtInterfaceOpt1": {
+            "value": "eth1-private"
+        },
+        "appLoadDistribution": {
+            "value": "Default"
+        },
+        "customMetrics": {
+            "value": "yes"
+        },
+        "cloudGuardVersion": {
+            "value": "R82 - Bring Your Own License"
+        },
+        "vmSize": {
+            "value": "Standard_D4ds_v5"
+        },
+        "sicKey": {
+            "value": "cl0udguard"
+        },
+        "bootstrapScript": {
+            "value": ""
+        },
+        "allowDownloadFromUploadToCheckPoint": {
+            "value": "true"
+        },
+        "additionalDiskSizeGB": {
+            "value": 0
+        },
+        "diskType": {
+            "value": "Premium_LRS"
+        },
+        "sourceImageVhdUri": {
+            "value": "noCustomUri"
+        },
+        "virtualNetworkName": {
+            "value": "sha-infra-network-vnet-ase-1"
+        },
+        "virtualNetworkAddressPrefixes": {
+            "value": [
+                "10.167.0.0/22"
+            ]
+        },
+        "vnetNewOrExisting": {
+            "value": "existing"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "sha-infra-network-rg-ase-1"
+        },
+        "subnet1Name": {
+            "value": "sha-infra-network-snet-ase-0"
+        },
+        "subnet1Prefix": {
+            "value": "10.167.0.0/24"
+        },
+        "subnet2Name": {
+            "value": "sha-infra-network-snet-ase-1"
+        },
+        "subnet2Prefix": {
+            "value": "10.167.1.0/24"
+        },
+        "subnet2StartAddress": {
+            "value": "10.167.1.6"
+        },
+        "enableIpv6": {
+            "value": false
+        },
+        "virtualNetworkAddressPrefixV6": {
+            "value": ""
+        },
+        "subnet1PrefixV6": {
+            "value": ""
+        },
+        "subnet2PrefixV6": {
+            "value": ""
+        },
+        "ilbFrontendIPv6Address": {
+            "value": ""
+        },
+        "floatingIP": {
+            "value": "yes"
+        },
+        "publicIPPrefix": {
+            "value": "no"
+        },
+        "adminShell": {
+            "value": "/bin/bash"
+        },
+        "tagsByResource": {
+            "value": {
+                "Function App": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Network/loadBalancers": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Network/networkSecurityGroups": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Network/publicIPAddresses": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Network/routeTables": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Storage/storageAccounts": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Compute/virtualMachineScaleSets": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                },
+                "Microsoft.Network/virtualNetworks": {
+                    "Name": "VMSS ingress",
+                    "Owner": "Britto.Antonycruz@TeWhatuOra.govt.nz",
+                    "application": "Shared",
+                    "bussiness-entity": "HealthAlliance",
+                    "cost-centre": "820-7237327-1864",
+                    "LegacyVMNVA": "",
+                    "role": "Networking",
+                    "app-tier": "Shared"
+                }
+            }
+        },
+        "deployNewNSG": {
+            "value": false
+        },
+        "ExistingNSG": {
+            "value": {
+                "name": "shainfranetworkcpvmssase1-nsg",
+                "id": "/subscriptions/ca095a5d-36c0-4d4f-82ff-83580d85ebba/resourceGroups/sha-infra-network-rg-ase-1/providers/Microsoft.Network/networkSecurityGroups/shainfranetworkcpvmssase1-nsg",
+                "location": "australiasoutheast",
+                "subscriptionName": ""
+            }
+        },
+        "storageAccountDeployMode": {
+            "value": "New"
+        },
+        "addStorageAccountIpRules": {
+            "value": false
+        },
+        "MaintenanceModePasswordHash": {
+            "value": null
+        },
+        "availabilityZones": {
+            "value": []
+        }
+    }
+}
