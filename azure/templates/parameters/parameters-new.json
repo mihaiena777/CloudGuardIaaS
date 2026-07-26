@@ -69,7 +69,7 @@
             "value": "yes"
         },
         "cloudGuardVersion": {
-            "value": "R82 - Pay As You Go (NGTP)"
+            "value": "R82 - Bring Your Own License"
         },
         "vmSize": {
             "value": "Standard_D4s_v4"
