@@ -9,7 +9,7 @@
             "value": "password"
         },
         "adminPassword": {
-            "value": "N0tAllowed!@#"
+            "value": ""
 		},
 		"upgrading": {
             "value": "yes"
@@ -33,7 +33,7 @@
             "value": "PRT-DH3-CP5150a-sms"
         },
         "configurationTemplate": {
-            "value": "AZ-ASE-EXT-R82"
+            "value": "AZ-ASE-EGR-R82"
         },
         "adminEmail": {
             "value": "Britto.Antonycruz@TeWhatuOra.govt.nz"
@@ -78,10 +78,10 @@
             "value": "Standard_D4ds_v5"
         },
 		"sicKey": {
-            "value": "cl0udguard"
+            "value": ""
         },
         "bootstrapScript": {
-            "value": ""
+            "value": "!/bin/bash\nclish -c 'set ntp active on' -s\nclish -c 'set ntp server primary 10.17.20.84 version 4' -s\nclish -c 'set ntp server secondary 10.69.220.84 version 4' -s\nclish -c 'set dns suffix healthcare.co.nz' -s\nclish -c 'set dns primary 10.167.12.4' -s\nclish -c 'set dns secondary 10.166.12.4' -s\nclish -c 'set dns tertiary 10.17.3.132' -s\nclish -c 'save config' -s\n"
         },
         "allowDownloadFromUploadToCheckPoint": {
             "value": "true"
