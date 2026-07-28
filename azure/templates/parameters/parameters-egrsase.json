@@ -21,7 +21,7 @@
             "value": "sha-infra-network-ilb-ase-2"
 		},
 		"vmName": {
-            "value": "cloudfwvmssase82egress"
+            "value": "cloudfwvmssase82egr"
         },
         "instanceCount": {
             "value": "2"
