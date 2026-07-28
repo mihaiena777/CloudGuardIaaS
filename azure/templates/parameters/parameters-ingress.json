@@ -15,7 +15,7 @@
             "value": "yes"
         },
         "vmName": {
-            "value": "cloudguardvmssase82ingress"
+            "value": "cloudfwvmssase82ing"
         },
         "instanceCount": {
             "value": "2"
