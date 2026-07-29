@@ -42,7 +42,7 @@
             "value": "Standard"
         },
         "instanceLevelPublicIPv4": {
-            "value": "yes"
+            "value": "no"
         },
         "lbsTargetRGName": {
             "value": "sha-infra-network-rg-ase-3"
