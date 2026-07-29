@@ -81,7 +81,7 @@
             "value": "B00tc4mpQweR"
         },
         "bootstrapScript": {
-            "value": "#!/bin/bash\nclish -c 'set ntp active on' -s\nclish -c 'set ntp server primary 10.17.20.84 version 4' -s\nclish -c 'set ntp server secondary 10.69.220.84 version 4' -s\nclish -c 'set dns suffix healthcare.co.nz' -s\nclish -c 'set dns primary 10.167.12.4' -s\nclish -c 'set dns secondary 10.166.12.4' -s\nclish -c 'set dns tertiary 10.17.3.132' -s\nclish -c 'save config' -s\n" 
+             "value": "#!/bin/bash\nclish -c 'set ntp active on' -s\nclish -c 'set ntp server primary 10.17.20.84 version 4' -s\nclish -c 'set ntp server secondary 10.69.220.84 version 4' -s\nclish -c 'set dns suffix healthcare.co.nz' -s\nclish -c 'set dns primary 10.167.12.4' -s\nclish -c 'set dns secondary 10.166.12.4' -s\nclish -c 'set dns tertiary 10.17.3.132' -s\nclish -c 'set static-route 100.84.24.0/22 nexthop gateway address 10.167.5.1 on' -s\nclish -c 'set static-route 100.85.24.0/22 nexthop gateway address 10.167.5.1 on' -s\nclish -c 'set static-route 166.83.0.0/16 nexthop gateway address 10.167.5.1 on' -s\nclish -c 'save config' -s\n"
         },
         "allowDownloadFromUploadToCheckPoint": {
             "value": "true"
