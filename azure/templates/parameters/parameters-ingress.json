@@ -39,7 +39,7 @@
             "value": "sha-infra-network-elb-ase-1"
         },
         "instanceLevelPublicIPv4": {
-            "value": "yes"
+            "value": "no"
         },
         "lbsTargetRGName": {
             "value": "sha-infra-network-rg-ase-4"
