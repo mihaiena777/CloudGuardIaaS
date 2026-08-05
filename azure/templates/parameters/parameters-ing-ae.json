@@ -128,7 +128,7 @@
             "value": ""
         },
         "floatingIP": {
-            "value": "no"
+            "value": "yes"
         },
         "adminShell": {
             "value": "/bin/bash"
